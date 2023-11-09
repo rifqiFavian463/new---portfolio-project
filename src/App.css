@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.copyright {
+  writing-mode: vertical-rl;
+}
