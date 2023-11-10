@@ -2,7 +2,7 @@
   "name": "new---portfolio-project",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://rifqifavian463.github.io/new--portfolio-project/",
+  "homepage": "https://rifqifavian463.github.io/new---portfolio-project/",
   "type": "module",
   "scripts": {
     "dev": "vite",
