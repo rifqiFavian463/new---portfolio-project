@@ -9,13 +9,13 @@ function Sidebar() {
     { iconName: "icon-layers", path: "/portfolio" },
   ];
   return (
-    <div className="fixed flex flex-col w-[50px] h-[100vh] justify-between border-e-2 border-gray-200 border-solid p-4 text-gray-600">
+    <div className="fixed z-50 flex flex-col w-[50px] h-[100vh] justify-between border-e-2 border-gray-200 border-solid p-4 text-black bg-white">
       <span className="font-extrabold text-lg">R.</span>
       <div className="flex flex-col gap-y-3 icons-list">
         {icons.map((icon, i) => {
           return (
             <Link to={icon.path} key={i}>
-              <span className={`${icon.iconName} font-bold`}></span>;
+              <span className={`${icon.iconName} font-bold`}></span>
             </Link>
           );
         })}
