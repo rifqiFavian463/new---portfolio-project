@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 function Sidebar() {
   const icons = [
-    { iconName: "icon-home", path: "/new---portfolio-project/" },
-    { iconName: "icon-user", path: "/new---portfolio-project/about" },
-    { iconName: "icon-graduation", path: "/new---portfolio-project/academy" },
-    { iconName: "icon-layers", path: "/new---portfolio-project/portfolio" },
+    { iconName: "icon-home", path: "https://rifqifavian463.github.io/new---portfolio-project/" },
+    { iconName: "icon-user", path: "https://rifqifavian463.github.io/new---portfolio-project/about" },
+    { iconName: "icon-graduation", path: "https://rifqifavian463.github.io/new---portfolio-project/academy" },
+    { iconName: "icon-layers", path: "https://rifqifavian463.github.io/new---portfolio-project/portfolio" },
   ];
   return (
     <div className="fixed z-50 flex flex-col w-[50px] h-[100vh] justify-between border-e-2 border-gray-200 border-solid p-4 text-black bg-white">
