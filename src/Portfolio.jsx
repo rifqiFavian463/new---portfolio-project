@@ -5,6 +5,7 @@ import CardImage3 from "./assets/card-image3.png";
 import CardImage4 from "./assets/card-image-4.png";
 import CardImage5 from "./assets/card-image5.png";
 import CardImage6 from "./assets/card-image6.png";
+import CardImage7 from "./assets/card-image7.png";
 
 import { motion } from "framer-motion";
 import { CursorContext } from "./CursorContext";
@@ -60,6 +61,13 @@ function Portfolio() {
       description: "Staycation. website merupakan sebuah travel app, saya mengaplikasikan design dari BuildWithAngga. menjadi sebuah tampilan website.",
       onGithub: "https://github.com/rifqiFavian463/Home-Page-Web-Travel",
     },
+    {
+      image: CardImage7,
+      title: "Collosal. Website",
+      techStack: "React JS, Tailwindcss",
+      description: "Collosal. Website merupakan latihan saya dalam mendalam React JS, design ini diambil dari website 'codedesign.dev' lalu saya implementasikan menjadi Front-End website.",
+      onGithub: "https://github.com/rifqiFavian463/Collosal-Project",
+    },
   ];
   return (
     <div>
@@ -106,7 +114,7 @@ function Portfolio() {
                   </a>
                 ) : null}
                 {card.onGithub ? (
-                  <a href={card.liveDemo}>
+                  <a href={card.onGithub}>
                     <button className="mt-7 bg-primary text-white text-[12px] px-[20px] font-secondary py-[8px]">On github</button>
                   </a>
                 ) : null}

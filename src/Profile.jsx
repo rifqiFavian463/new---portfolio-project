@@ -42,6 +42,18 @@ function Profile() {
     },
   };
 
+  const downloadCV = () => {
+    const googleDriveFileUrl =
+      "https://drive.usercontent.google.com/download?id=19zeLqk_SDhLI8r1azXfBDOYcnCcuiunS&export=download&authuser=0&confirm=t&uuid=5e4bd90c-c060-4b19-b5f9-4172da5d9272&at=APZUnTWjkHnOttigOnsxb12ZhY4P:1699683048545";
+
+    const anchor = document.createElement("a");
+    anchor.href = googleDriveFileUrl;
+    anchor.target = "_blank";
+    anchor.download = "CV_Rifqi_Favian_Hibatullah.pdf";
+
+    anchor.click();
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -55,7 +67,9 @@ function Profile() {
           Front-End Web <br /> Developer
         </motion.h1>
         <motion.p className="text-[26px] font-primary mt-3">Bekasi, Indonesia</motion.p>
-        <button className="btn mt-7 relative z-20">Download CV</button>
+        <button className="btn mt-7 relative z-20" onClick={downloadCV}>
+          Download CV
+        </button>
         <motion.div variants={container} initial="hidden" animate="show" exit="out" className="social-list absolute flex flex-col md:right-[33em] gap-y-3 md:gap-y-6 lg:gap-y-3 bottom-10 md:bottom-10">
           <span className="font-secondary lg:[writing-mode:vertical-lr] lg:-rotate-180">
             social <div className="h-[3px] w-[150px] relative z-50 lg:h-[150px] lg:w-[2px] bg-white"></div>
