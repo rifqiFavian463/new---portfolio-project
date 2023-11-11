@@ -60,16 +60,16 @@ function Profile() {
           <span className="font-secondary lg:[writing-mode:vertical-lr] lg:-rotate-180">
             social <div className="h-[3px] w-[150px] relative z-50 lg:h-[150px] lg:w-[2px] bg-white"></div>
           </span>
-          <motion.a variants={kodomo} href="https://www.linkedin.com/in/rifqi-favian-hibatullah-61a485261/">
+          <motion.a variants={kodomo} href="https://www.instagram.com/rifqiifh_/">
             <FontAwesomeIcon icon={faInstagram} className="text-3xl lg:text-3xl md:text-[48px] cursor-pointer" />
           </motion.a>
           <motion.a variants={kodomo} href="https://www.linkedin.com/in/rifqi-favian-hibatullah-61a485261/">
             <FontAwesomeIcon icon={faLinkedin} className="text-3xl lg:text-3xl md:text-[48px] cursor-pointer" />
           </motion.a>
-          <motion.a variants={kodomo} href="https://www.linkedin.com/in/rifqi-favian-hibatullah-61a485261/">
+          <motion.a variants={kodomo} href="https://twitter.com/17_rifqi97318?t=4um-Bxs5AHDkbCZho8q17Q&s=09">
             <FontAwesomeIcon icon={faTwitter} className="text-3xl lg:text-3xl md:text-[48px] cursor-pointer" />
           </motion.a>
-          <motion.a variants={kodomo} href="https://www.linkedin.com/in/rifqi-favian-hibatullah-61a485261/">
+          <motion.a variants={kodomo} href="https://github.com/rifqiFavian463">
             <FontAwesomeIcon icon={faGithub} className="text-3xl lg:text-3xl md:text-[48px] cursor-pointer" />
           </motion.a>
         </motion.div>
