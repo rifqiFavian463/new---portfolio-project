@@ -17,13 +17,13 @@ const CursorProvider = ({ children }) => {
     setCursorBG("default");
   };
 
+  let move = (e) => {
+    setCursorPos({
+      x: e.clientX,
+      y: e.clientY,
+    });
+  };
   useEffect(() => {
-    let move = (e) => {
-      setCursorPos({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
     window.addEventListener("mousemove", move);
 
     return () => {
@@ -33,15 +33,15 @@ const CursorProvider = ({ children }) => {
 
   let cursorVariants = {
     default: {
-      x: `${cursorPos.x - 1350}px`,
-      y: `${cursorPos.y - 10}px`,
+      x: `${cursorPos.x - 1342}px`,
+      y: `${cursorPos.y - 15}px`,
       backgroundColor: "#ffffff",
     },
     text: {
       width: "100px",
       height: "100px",
       x: `${cursorPos.x - 1320}px`,
-      y: `${cursorPos.y - 35}px`,
+      y: `${cursorPos.y - 50}px`,
       backgroundColor: "#fff",
       mixBlendMode: "difference",
     },

@@ -75,7 +75,10 @@ function Profile() {
         </motion.div>
       </motion.div>
       <motion.img
+        onMouseEnter={mouseEnterHandler}
+        onMouseLeave={mouseLeaveHandler}
         initial={{ opacity: 0, scale: 0 }}
+        // whileHover={{ scale: 1.1 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0 }}
         transition={transition1}
