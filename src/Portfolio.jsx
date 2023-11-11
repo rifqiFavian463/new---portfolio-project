@@ -6,7 +6,9 @@ import CardImage4 from "./assets/card-image-4.png";
 import CardImage5 from "./assets/card-image5.png";
 import CardImage6 from "./assets/card-image6.png";
 
+import { motion } from "framer-motion";
 import { CursorContext } from "./CursorContext";
+import { transition1 } from "./transition";
 
 function Portfolio() {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
@@ -61,13 +63,38 @@ function Portfolio() {
   ];
   return (
     <div>
-      <div onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} className="w-[100%] h-[150px] bg-waves bg-cover bg-top">
-        <h1 className="h1 absolute top-[103px] mix-blend-difference left-20">Portfolio</h1>
-      </div>
+      <motion.div
+        onMouseEnter={mouseEnterHandler}
+        onMouseLeave={mouseLeaveHandler}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={transition1}
+        className="w-[100%] h-[150px] bg-waves bg-cover bg-top"
+      >
+        <motion.h1
+          initial={{ opacity: 0, y: "-50%" }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: "-50%" }}
+          transition={transition1}
+          className="h1 absolute top-[103px] mix-blend-difference left-20"
+        >
+          Portfolio
+        </motion.h1>
+      </motion.div>
       <div className="flex flex-wrap gap-x-9 gap-y-9 justify-center card-container w-100 ps-20 pe-10 mt-16 lg:mt-28 mb-10">
         {cards.map((card, i) => {
           return (
-            <div onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} className="card w-[280px] bg-white" key={i}>
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0 }}
+              transition={transition1}
+              onMouseEnter={mouseEnterHandler}
+              onMouseLeave={mouseLeaveHandler}
+              className="card w-[280px] bg-white"
+              key={i}
+            >
               <img src={card.image} alt="card-image" />
               <div className="text p-5 pt-4">
                 <h4 className="h1 text-lg  text-primary font-primary">{card.title}</h4>
@@ -84,7 +111,7 @@ function Portfolio() {
                   </a>
                 ) : null}
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>
