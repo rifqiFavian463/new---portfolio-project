@@ -44,8 +44,7 @@ function Profile() {
 
   const downloadCV = () => {
     const googleDriveFileUrl =
-      "https://drive.usercontent.google.com/download?id=19zeLqk_SDhLI8r1azXfBDOYcnCcuiunS&export=download&authuser=0&confirm=t&uuid=5e4bd90c-c060-4b19-b5f9-4172da5d9272&at=APZUnTWjkHnOttigOnsxb12ZhY4P:1699683048545";
-
+      "https://drive.usercontent.google.com/download?id=1p_VcjO5-ri01noSKKijGDakakdP2LGBd&export=download&authuser=1&confirm=t&uuid=8fa1089b-65ca-4ae8-991b-c7a9ecd833a0&at=APZUnTVmcY-tcT2tf3J8WqQPJyN1:1699937698718";
     const anchor = document.createElement("a");
     anchor.href = googleDriveFileUrl;
     anchor.target = "_blank";

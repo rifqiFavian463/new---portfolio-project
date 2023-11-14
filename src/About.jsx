@@ -69,6 +69,8 @@ function About() {
           <motion.i variants={container} className="devicon-nodejs-plain text-[40px]"></motion.i>
           <motion.i variants={container} className="devicon-express-original-wordmark text-[40px]"></motion.i>
           <motion.i variants={container} className="devicon-git-plain text-[40px]"></motion.i>
+          <motion.i variants={container} className="devicon-mysql-plain-wordmark text-[40px]"></motion.i>
+          <motion.i variants={container} className="devicon-mongodb-plain-wordmark text-[40px]"></motion.i>
         </motion.div>
       </div>
     </motion.div>
