@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { transition1 } from "./transition";
 import { motion } from "framer-motion";
 import { CursorContext } from "./CursorContext";
@@ -51,6 +51,28 @@ function Academy() {
       transition: transition1,
     },
   };
+
+  // Contoh trigger element scroll menggunakan getBoundingClientRect
+  // const [scrollY, setScrollY] = useState(0);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScrollY(window.scrollY);
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+  // const triggerElement = document.querySelector(".test-el").getBoundingClientRect().top + window.scrollY;
+  // console.log(triggerElement);
+  // if (scrollY > triggerElement) {
+  //   console.log("trigger on");
+  // }
+
+  const stringTest = "Testing";
+
   return (
     <div>
       <motion.div
@@ -78,7 +100,7 @@ function Academy() {
             <h5 className="h1 text-xl font-secondary">Certificates</h5>
             <div className="w-[100%] h-[2px] bg-white"></div>
           </div>
-          <span className=" font-secondary text-sm ">List sertifikat web programming</span>
+          <span className="test-el font-secondary text-sm ">List sertifikat web programming</span>
           {/* sertif list */}
           <motion.div variants={kodomo} className="bg-white p-3 mt-4" whileHover={{ scale: 1.02 }} transition={transition1}>
             <motion.h4 className="h1 text-lg text-primary">Belajar Dasar Pemrograman Web</motion.h4>
@@ -91,6 +113,13 @@ function Academy() {
             <motion.h4 className="h1 text-lg text-primary">Belajar Membuat Front-End Web untuk Pemula</motion.h4>
             <motion.span className="text-primary font-secondary text-sm font-bold ">Dicoding 2023</motion.span>
             <a href="https://www.dicoding.com/certificates/4EXG41E0DPRL">
+              <motion.button className="ms-2 bg-primary text-white text-[12px] px-[20px] font-secondary py-[8px]">Check Credential</motion.button>
+            </a>
+          </motion.div>
+          <motion.div variants={kodomo} className="bg-white p-3 mt-4 " whileHover={{ scale: 1.02 }} transition={transition1}>
+            <motion.h4 className="h1 text-lg text-primary">Belajar Fundamental Front-End Web Development</motion.h4>
+            <motion.span className="text-primary font-secondary text-sm font-bold ">Dicoding 2023</motion.span>
+            <a href="https://www.dicoding.com/certificates/81P2V3J3QPOY">
               <motion.button className="ms-2 bg-primary text-white text-[12px] px-[20px] font-secondary py-[8px]">Check Credential</motion.button>
             </a>
           </motion.div>
