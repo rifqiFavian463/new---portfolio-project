@@ -2,7 +2,7 @@ import { useContext } from "react";
 import ProfileImage from "./assets/profile-image.jpeg";
 import { CursorContext } from "./CursorContext";
 import { motion } from "framer-motion";
-import { transition1, transition2 } from "./transition";
+import { transition1 } from "./transition";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faLinkedin, faTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -44,7 +44,7 @@ function Profile() {
 
   const downloadCV = () => {
     const googleDriveFileUrl =
-      "https://drive.usercontent.google.com/download?id=1p_VcjO5-ri01noSKKijGDakakdP2LGBd&export=download&authuser=1&confirm=t&uuid=8fa1089b-65ca-4ae8-991b-c7a9ecd833a0&at=APZUnTVmcY-tcT2tf3J8WqQPJyN1:1699937698718";
+      "https://drive.usercontent.google.com/download?id=1vjXd-MjzsOC0gsn8aG7P6uDQqa5qdX_t&export=download&authuser=0&confirm=t&uuid=514ff430-9304-4438-85e0-1bc35f8ff00f&at=APZUnTUNwUg5r7XimKXLG0tkC1Vq:1703658661880";
     const anchor = document.createElement("a");
     anchor.href = googleDriveFileUrl;
     anchor.target = "_blank";

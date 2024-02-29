@@ -6,7 +6,7 @@ import CardImage4 from "./assets/card-image-4.png";
 import CardImage5 from "./assets/card-image5.png";
 import CardImage6 from "./assets/card-image6.png";
 import CardImage7 from "./assets/card-image7.png";
-
+import CardImage8 from "./assets/card-image8.png";
 import { motion } from "framer-motion";
 import { CursorContext } from "./CursorContext";
 import { transition1 } from "./transition";
@@ -35,7 +35,7 @@ function Portfolio() {
       title: "Amazon App",
       techStack: "React JS, Tailwindcss, Framer-Motion",
       description:
-        "Amazon website merupakan e-commerce website yang berisi produk-produk kecantikan, pada project ini saya bekerja sebagai Front-End Developer menggunakan framework React JS serta Framer-Motion dalam mengaplikasikan animasi.",
+        "Amazon website merupakan e-commerce website yang berisi produk-produk kecantikan, website ini merupakan latihan saya sebagai Front-End Developer menggunakan framework React JS serta Framer-Motion dalam mengaplikasikan animasi.",
       liveDemo: "https://rifqifavian463.github.io/Amazon-E-Commerce-Web/",
     },
     {
@@ -67,6 +67,14 @@ function Portfolio() {
       techStack: "React JS, Tailwindcss",
       description: "Collosal. Website merupakan latihan saya dalam mendalam React JS, design ini diambil dari website 'codedesign.dev' lalu saya implementasikan menjadi Front-End website.",
       onGithub: "https://github.com/rifqiFavian463/Collosal-Project",
+    },
+    {
+      image: CardImage8,
+      title: "Mangaku. Website",
+      techStack: "HTML5, CSS, Bootstrap, Jquery, Webpack",
+      description:
+        "Mangaku. merupakan website untuk submission dicoding pada kelas Fundamental Front-End Web Development, saya belajar banyak tentang web bundling webpack pada kelas ini lalu menerapkannya pada website buatan saya.",
+      onGithub: "https://github.com/rifqiFavian463/Submission-dicoding-Belajar-Fundamental-Front-End-Web-Development",
     },
   ];
   return (

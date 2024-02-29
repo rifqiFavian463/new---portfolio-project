@@ -11,10 +11,10 @@ function App() {
   return (
     <>
       <Router>
-        <Sidebar />
-        <AnimRoutes />
         {/* cursor */}
         <motion.div variants={cursorVariants} animate={cursorBG} className="w-[38px] h-[38px] md:hidden lg:block bg-white fixed top-0 right-0 pointer-events-none z-20 rounded-full"></motion.div>
+        <Sidebar />
+        <AnimRoutes />
       </Router>
     </>
   );
